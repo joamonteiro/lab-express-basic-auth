@@ -7,10 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{title}}</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
-
+      {{#if loggedInUser}}
+      <ul class="nav">
+        <li class="welcoming">Welcome <a href="/"><strong>{{loggedInUser}}</strong></a></li>
+        <li class="invis"></li>
+        <li class="logon">
+          <a href="/main">/main</a>
+          <a href="/private">/private</a>
+          <form action="/logout" method="POST">
+            <button type="submit">Logout</button>
+          </form>
+        </ul>
+      </div>
+      {{else}}
+      <ul class="session">
+        <li>
+          <a href="/login">Login</a>
+        </li>
+        <li>
+          <a href="/signup">Signup</a>
+        </li>
+      </ul>
+      {{/if}}
     {{{body}}}
 
     <script src="/js/script.js"></script>

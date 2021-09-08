@@ -6,3 +6,179 @@ body {
 a {
   color: #00B7FF;
 }
+
+body {
+  background-color: antiquewhite;
+}
+
+.session {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Autour One', cursive;
+  text-transform: uppercase;
+  width: 90vw;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.nav li{
+  list-style: none;
+  font-family: 'Autour One', cursive;
+}
+
+.nav button {
+    color:#29339B;
+    border: none;
+    background-color: antiquewhite;
+    font-family: inherit;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.nav button:hover {
+  color: #30BCED ;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.nav .invis {
+  font-family: inherit;
+}
+
+.welcoming {
+  font-family: inherit !important;
+}
+
+.welcoming a{
+  text-decoration: none;
+  color: #29339B;
+}
+
+.welcoming a:hover{
+  color: #30BCED ;
+  text-decoration: underline;
+}
+
+.logon {
+  display: flex;
+}
+
+.session li{
+  list-style: none;
+  margin-left: 50px;
+}
+
+.session li a{
+  color:#29339B;
+  text-decoration: none;
+}
+
+.session li a:hover{
+  color: #30BCED ;
+  text-decoration: underline;
+}
+
+.index-title {
+  font-family: 'Autour One', cursive;
+  color:#29339B;
+  margin: 130px 0 0 0;
+  font-size: 80px;
+  width: 80vw;
+}
+
+.session-title {
+  font-family: 'Autour One', cursive;
+  font-size: 60px;
+  color:#000;
+  margin-bottom: 10px;
+  margin-top: 120px;
+}
+
+.session-inp-lab {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  color:#000;
+  width: 15vw;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin: 10px 0 5px 10px;
+  font-size: 20px;
+}
+
+.session-inp {
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #000;
+  border-radius: 5px;
+  width: 50vw;
+  height: 5vh;
+  min-height: 40px;
+}
+
+.session-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.session-page button{
+  width: 10vw;
+  height: 40px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  background-color: antiquewhite;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+.session-page button:hover{
+  color: #29339B;
+  cursor: pointer;
+  border: 2px solid #29339B;
+}
+
+.session-page div {
+  display: flex;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.main {
+  height: 75vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.main img {
+  border-radius: 500px;
+}
+
+.main .box {
+  display: flex;
+  align-items: center;
+}
+
+.main .box a{
+  margin: 0 20px 0 20px;
+  font-size: 110px;
+}
+
+.private {
+  display: flex;
+  flex-direction: row;
+}
+
+.private .box {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.private .box h1{
+  margin-left: 20px;
+  color: #00B7FF;
+  font-family: 'Autour One', cursive;
+  font-size: 50px;
+}

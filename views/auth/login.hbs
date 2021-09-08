@@ -1,0 +1,14 @@
+<h2 class="session-title">Login</h2>
+<form class="session-page" action="/login" method="POST">
+    <label class="session-inp-lab">Username</label>
+    <input class="session-inp" type="text" name="username" required/>
+
+    <label class="session-inp-lab">Password</label>
+    <input class="session-inp" type="password" name="password" required/>
+    <div>
+    <button type="submit">Login</button>
+    </div>
+</form>
+{{#if errorMessage }}
+    <p>{{errorMessage}}</p>
+{{/if}}
